@@ -22,36 +22,52 @@ namespace Schaltjahr_Projekt
                 Console.WriteLine("Jahr=");
                 h = Convert.ToInt32(Console.ReadLine());
 
-                if (h % 4 == 0)
+                if (h % 4 == 0 && (h % 100 != 0 || h % 400 == 0))
                 {
-                    if (h % 100 == 0)
-                    {
-                        if (h % 400 == 0)
-                        {
-                            Console.WriteLine("Das ist ein Schaltjahr");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Das ist kein Schaltjahr");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Das ist ein Schaltjahr");
-
-                    }
-
+                    Console.WriteLine("Das ist ein Schaltjahr");
                 }
                 else
                 {
                     Console.WriteLine("Das ist kein Schaltjahr");
                 }
 
+                //if (h % 4 == 0)
+                //{
+                //    if (h % 100 == 0)
+                //    {
+                //        if (h % 400 == 0)
+                //        {
+                //            Console.WriteLine("Das ist ein Schaltjahr");
+                //        }
+                //        else
+                //        {
+                //            Console.WriteLine("Das ist kein Schaltjahr");
+                //        }
+                //    }
+                //    else
+                //    {
+                //        Console.WriteLine("Das ist ein Schaltjahr");
+
+                //    }
+
+                //}
+                //else
+                //{
+                //    Console.WriteLine("Das ist kein Schaltjahr");
+                //}
+
+
+
+
+
+
+
                 Console.Write("Nochmal? (ja/nein):");
                 wiederholung = Console.ReadLine();
 
-            } while (wiederholung == "ja");
+            } while (wiederholung == "ja"  || wiederholung == "JA" || wiederholung == "Ja");
 
+            //oder : ||     und : && , &
            
            
             
