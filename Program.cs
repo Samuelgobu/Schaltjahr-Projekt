@@ -13,12 +13,12 @@ namespace Schaltjahr_Projekt
     {
         static void Main(string[] args)
         {
-            int h;
+            long h;
 
 
             Console.WriteLine("Bitte schreiben Sie ein jahr und das Programm wird zeigen, ob es ein Schaltjahr ist oder nein");
             Console.WriteLine("Jahr=");
-            h = Convert.ToInt32(Console.ReadLine());
+            h = Convert.ToInt64(Console.ReadLine());
 
             if (h % 4 == 0)
             {
