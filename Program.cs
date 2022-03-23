@@ -13,37 +13,55 @@ namespace Schaltjahr_Projekt
     {
         static void Main(string[] args)
         {
+            
             long h;
-
-
-            Console.WriteLine("Bitte schreiben Sie ein jahr und das Programm wird zeigen, ob es ein Schaltjahr ist oder nein");
-            Console.WriteLine("Jahr=");
-            h = Convert.ToInt64(Console.ReadLine());
-
-            if (h % 4 == 0)
+            string wiederholung = "ja";
+            do
             {
-                if (h % 100 == 0)
+                Console.WriteLine("Bitte schreiben Sie ein jahr und das Programm wird zeigen, ob es ein Schaltjahr ist oder nein");
+                Console.WriteLine("Jahr=");
+                h = Convert.ToInt32(Console.ReadLine());
+
+                if (h % 4 == 0)
                 {
-                    if (h % 400 == 0)
+                    if (h % 100 == 0)
                     {
-                        Console.WriteLine("Das ist ein Schaltjahr");
+                        if (h % 400 == 0)
+                        {
+                            Console.WriteLine("Das ist ein Schaltjahr");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Das ist kein Schaltjahr");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("Das ist kein Schaltjahr");
+                        Console.WriteLine("Das ist ein Schaltjahr");
+
                     }
+
                 }
                 else
                 {
-                    Console.WriteLine("Das ist ein Schaltjahr");
-
+                    Console.WriteLine("Das ist kein Schaltjahr");
                 }
 
-            }
-            else
-            {
-                Console.WriteLine("Das ist kein Schaltjahr");
-            }
+                Console.Write("Nochmal? (ja/nein):");
+                wiederholung = Console.ReadLine();
+
+            } while (wiederholung == "ja");
+
+           
+           
+            
+            
+
+            
+            
+
+
+            
         }
     }
 }
