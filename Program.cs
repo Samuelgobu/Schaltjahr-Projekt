@@ -67,7 +67,7 @@ namespace Schaltjahr_Projekt
 
             } while (wiederholung == "ja"  || wiederholung == "JA" || wiederholung == "Ja");
 
-            //oder : ||     und : && , &
+            //oder : ||     und : && , &    
            
            
             
