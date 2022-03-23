@@ -18,7 +18,7 @@ namespace Schaltjahr_Projekt
             string wiederholung = "ja";
             do
             {
-                Console.WriteLine("Bitte schreiben Sie ein jahr und das Programm wird zeigen, ob es ein Schaltjahr ist oder nein");
+                Console.WriteLine("Bitte schreiben Sie ein jahr und das Programm wird überprüfen, ob es ein Schaltjahr ist oder nein");
                 Console.WriteLine("Jahr=");
                 h = Convert.ToInt32(Console.ReadLine());
 
